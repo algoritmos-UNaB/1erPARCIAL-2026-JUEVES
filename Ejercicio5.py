@@ -14,14 +14,15 @@ class ProductoKwikE:
         if descrip!=None:
             self.descripcion=descrip
         if precio!=None:
+            if precio < 0:
+            raise ValueError("El precio nuevo debe ser positivo.")
             self.precio=precio
         if stock!=None:
             self.stock=stock
         return
 
     def Dias_expiro (self,dia):
-        hoy = date.today()
-        dif_dias = self.fecha_vencimiento - hoy
+        dif_dias = self.fecha_vencimiento - dia
         dias_restantes = dif_dias.days
         if dias_restantes <0:
             print (f"el producto {self.descripcion} expiro. El stock vale 0.")

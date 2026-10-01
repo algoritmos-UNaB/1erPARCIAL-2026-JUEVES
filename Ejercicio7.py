@@ -4,9 +4,7 @@ from datetime import date
 
 
 class KwikEMart:
-    l
     def __init__(self):
-
         self.pasillos = {"Bebidas": [], "Snacks": [], "Conveniencias": []}
 
     def agregar_pasillo(self, n_pasillo: str):
@@ -34,10 +32,8 @@ class KwikEMart:
             print("el producto no se encuentra en el pasillo.")
     
     def verificar_vencimientos(self):
-        
         hoy = date.today()
         contador_desechados = 0
-
         for pasillo, productos in self.pasillos.items():
             for producto in productos[:]:
             diferencia = producto.fecha_vencimiento - hoy
@@ -45,7 +41,8 @@ class KwikEMart:
                 print(f"Desechando {producto.descripcion} del pasillo")
                 self.remover_producto(pasillo, producto)
                 contador_desechados += 1
-            
         return contador_desechados
+
+
     
    
