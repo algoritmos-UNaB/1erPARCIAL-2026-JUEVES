@@ -1,0 +1,2 @@
+def eventos_ordenados ( eventos , expresion = False) : #si solo pongo eventos, y ninguna expresion devuelve la lista en forma ascendente
+    return sorted (eventos , reverse = expresion) # la funcion ordena alfabeticamente, condiciono reverse al boleano expresion
