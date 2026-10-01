@@ -1,1 +1,1 @@
-ddddd
+donas_consumidas = [2**((n-1)/2) for n in range(1,N+1)] #la consigna tiene llaves, es vez de corchete, lo que seria un diccionario, uso corchete para la lista
