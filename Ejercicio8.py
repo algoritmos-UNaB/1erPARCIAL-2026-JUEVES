@@ -1,3 +1,5 @@
+#no lo pude hacer 
+
 class Nodo:
     def __init__(self, dato, sig=None):
         self._elem = dato
