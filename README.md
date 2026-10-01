@@ -86,10 +86,12 @@ La clase debe contener métodos para facilitar:
 8.2 Implementar Iteradores para las listas enlazadas.
 
 ---
-Nombre y Apellido:
+Nombre y Apellido: Natalia Villano 
 
-Email:
+DNI: 46818847
 
-Comisión:
+Email: nataliavillano123@gmail.com
+
+Comisión: 2 
 
 ---
