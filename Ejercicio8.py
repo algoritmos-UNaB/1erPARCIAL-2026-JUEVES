@@ -6,3 +6,6 @@ class Nodo:
 class ListaEnlazada:
     def __init__(self):
         self.header = Nodo(0)
+
+        
+
